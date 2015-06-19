@@ -1,6 +1,7 @@
 package com.test;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
@@ -23,7 +24,11 @@ public class Sprint_1 extends MVCPortlet {
 	@Override
 	public void init() throws PortletException {
 		_log.debug("init()");
-
+		 Enumeration<String> initialParams = getInitParameterNames();
+		 while(initialParams.hasMoreElements()){
+			 String param = initialParams.nextElement();
+			 _log.debug("param: " + param);
+		 }
 		super.init();
 	}
 
