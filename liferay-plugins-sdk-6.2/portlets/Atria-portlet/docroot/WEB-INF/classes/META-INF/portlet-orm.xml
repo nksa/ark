@@ -7,7 +7,7 @@
 			<access>PROPERTY</access>
 		</persistence-unit-defaults>
 	</persistence-unit-metadata>
-	<mapped-superclass class="com.test.model.impl.FooModelImpl">
+	<mapped-superclass class="com.test.model.impl.ContactModelImpl">
 		<attributes>
 			<id name="personId" />
 			<basic name="companyId" />
@@ -35,8 +35,8 @@
 			<transient name="userUuid" />
 		</attributes>
 	</mapped-superclass>
-	<entity class="com.test.model.impl.FooImpl" name="Foo">
-		<table name="vega_Foo" />
+	<entity class="com.test.model.impl.ContactImpl" name="Contact">
+		<table name="vega_Contact" />
 		<attributes />
 	</entity>
 </entity-mappings>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="com.test.model.Foo">
+	<model name="com.test.model.Contact">
 		<field name="personId" type="long" />
 		<field name="companyId" type="long" />
 		<field name="userId" type="long" />

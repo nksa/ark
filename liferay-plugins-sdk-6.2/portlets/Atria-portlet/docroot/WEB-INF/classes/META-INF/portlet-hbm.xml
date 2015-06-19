@@ -2,8 +2,8 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping default-lazy="false" auto-import="false">
-	<import class="com.test.model.Foo" />
-	<class name="com.test.model.impl.FooImpl" table="vega_Foo">
+	<import class="com.test.model.Contact" />
+	<class name="com.test.model.impl.ContactImpl" table="vega_Contact">
 		<cache usage="read-write" />
 		<id name="personId" type="long">
 			<generator class="assigned" />
@@ -20,12 +20,12 @@
 		<property name="age" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
 		<property name="friend" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
 		<property name="relative" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
-		<one-to-one name="imageBlobModel" access="com.liferay.portal.dao.orm.hibernate.PrivatePropertyAccessor" class="com.test.model.FooImageBlobModel" cascade="save-update" outer-join="false" constrained="true" />
+		<one-to-one name="imageBlobModel" access="com.liferay.portal.dao.orm.hibernate.PrivatePropertyAccessor" class="com.test.model.ContactImageBlobModel" cascade="save-update" outer-join="false" constrained="true" />
 	</class>
-	<class name="com.test.model.FooImageBlobModel" table="vega_Foo" lazy="true">
+	<class name="com.test.model.ContactImageBlobModel" table="vega_Contact" lazy="true">
 		<id name="personId" column="personId">
 			<generator class="foreign">
-				<param name="property">com.test.model.impl.FooImpl</param>
+				<param name="property">com.test.model.impl.ContactImpl</param>
 			</generator>
 		</id>
 		<property column="image" name="imageBlob" type="blob" />
