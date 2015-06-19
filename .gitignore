@@ -1,5 +1,6 @@
 *.project
 .settings
 *.class
-*.properties
-.sass-cache/*
+*/build.nxant.properties
+liferay-plugins-sdk-6.2/dist/*
+*/*/*/*/*/.sass-cache/*
