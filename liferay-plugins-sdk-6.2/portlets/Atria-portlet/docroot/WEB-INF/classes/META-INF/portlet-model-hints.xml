@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.test.model.Foo">
+		<field name="personId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="firstName" type="String" />
+		<field name="lastName" type="String" />
+		<field name="nickName" type="String" />
+		<field name="birthday" type="Date" />
+		<field name="age" type="int" />
+		<field name="friend" type="boolean" />
+		<field name="relative" type="boolean" />
+		<field name="image" type="Blob" />
+	</model>
+</model-hints>

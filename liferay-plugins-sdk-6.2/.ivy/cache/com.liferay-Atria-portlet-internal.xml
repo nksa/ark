@@ -6,8 +6,8 @@
 		module="Atria-portlet"
 		revision="working@THESS-xanthopoulos"
 		conf="internal"
-		confs="default, internal, provided, runtime, test"
-		date="20150619152237"/>
+		confs="default, internal"
+		date="20150619171044"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>
